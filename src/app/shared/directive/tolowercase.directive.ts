@@ -21,8 +21,8 @@ ngOnInit(): void {
 
 @HostListener('keyup',['$event'])
 onKeyUp(eve:Event){
+  let val= (eve.target as HTMLInputElement).value;
+  (eve.target as HTMLInputElement).value=val.toLowerCase()
   console.log((eve.target as HTMLInputElement).value);
- let val= (eve.target as HTMLInputElement).value;
- (eve.target as HTMLInputElement).value=val.toLowerCase()
 }
 }
