@@ -7,6 +7,7 @@ import { HighLighterDirective2 } from './shared/directive/highLighterCssDirectiv
 import { CssDirective } from './shared/directive/cssDirective';
 import { CssStyleDirective } from './shared/directive/css-style.directive';
 import { CsshighlightDirective } from './shared/directive/csshighlight.directive';
+import { HeadingCssDirective } from './shared/directive/heading-css.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CsshighlightDirective } from './shared/directive/csshighlight.directive
     HighLighterDirective2,
     CssDirective,
     CssStyleDirective,
-    CsshighlightDirective
+    CsshighlightDirective,
+    HeadingCssDirective
   ],
   imports: [
     BrowserModule
